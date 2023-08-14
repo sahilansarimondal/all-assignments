@@ -19,7 +19,7 @@ You need to understand the API of jwt. We will be covering this in the extra rec
    Description: Authenticates an admin. It requires the admin to send username and password in the headers.
    Input: Headers: { 'username': 'admin', 'password': 'pass' }
    Output: { message: 'Logged in successfully', token: 'jwt_token_here' }
- - POST /admin/courses
+ - POST                                                                                       
    Description: Creates a new course.
    Input: Headers: { 'Authorization': 'Bearer jwt_token_here' }, Body: { title: 'course title', description: 'course description', price: 100, imageLink: 'https://linktoimage.com', published: true }
    Output: { message: 'Course created successfully', courseId: 1 }
